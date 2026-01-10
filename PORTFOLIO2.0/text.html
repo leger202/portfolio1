@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>HTML CSS JS</title>
+<style>
+    body {
+        margin: 0;
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        width: 500px;
+    }
+
+    .line-text {
+        display: flex;
+        align-items: center;
+        color: #f4b400;
+        font-size: 32px;
+        font-weight: bold;
+        margin: 20px 0;
+    }
+
+    .line-text::before,
+    .line-text::after {
+        content: "";
+        flex: 1;
+        height: 4px;
+        background: #f4b400;
+    }
+
+    .line-text span {
+        margin: 0 15px;
+        white-space: nowrap;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="line-text"><span>HTML</span></div>
+    <div class="line-text"><span>CSS</span></div>
+    <div class="line-text"><span>Java-Script</span></div>
+</div>
+
+</body>
+</html>
