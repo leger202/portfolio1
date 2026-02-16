@@ -2,15 +2,21 @@ body {
   background-color: black;
   color: #f9ae00;
 }
+body .fa-solid.fa-caret-down {
+  display: none;
+}
 body nav {
   top: -50px;
   height: 45px;
-  width: 100%;
-  margin-left: 35px;
-  margin-left: 0px;
   position: fixed;
   border: 2px solid orange;
   transform: 0.5s;
+  z-index: 1;
+  width: 100%;
+}
+body nav:hover {
+  background-color: #f9ae00;
+  color: black;
 }
 body .container {
   display: grid;
@@ -32,6 +38,7 @@ body #text {
 }
 
 .vert {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 2.5em;
   margin-top: -58px;
   margin-left: 40%;
@@ -46,13 +53,18 @@ body #text {
   opacity: 0;
   transform: translateY(-30px);
   display: grid;
-  grid-template-columns: 80% 20%;
+  grid-template-columns: 70% 30%;
 }
 
 .cprojets1 {
   opacity: 1;
   transform: translateY(0);
   transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.log8 {
+  width: 180px;
+  margin-top: 50px;
 }
 
 .logo1 {
@@ -65,7 +77,11 @@ body #text {
 
 .logo2 {
   margin-left: 1055px;
-  width: 150px;
+  width: 290px;
+}
+
+.txt {
+  margin-right: 45px;
 }
 
 .amg {
@@ -101,4 +117,139 @@ footer {
   margin-top: 220px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5em;
+}
+
+#plan {
+  margin-left: 40%;
+  width: 900px;
+  margin-top: -560px;
+}
+
+.nav {
+  height: 0px;
+  display: none;
+  width: 150px;
+  place-self: end;
+  text-align: center;
+  gap: space-between;
+  background-color: rgba(151, 148, 148, 0.516);
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  body {
+    width: 430px;
+    overflow-x: hidden;
+  }
+  nav {
+    display: none;
+  }
+  .big {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo2 {
+    display: none;
+    margin-left: 500px;
+    width: 150px;
+  }
+  #plan {
+    width: 500px;
+    margin-left: 80px;
+  }
+  #tel {
+    width: 100px;
+  }
+  .log8 {
+    margin-top: -20px;
+    width: 100px;
+  }
+  .vert {
+    width: 200px;
+    justify-content: center;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .soc {
+    display: none;
+  }
+  .ite {
+    margin-left: 12px;
+    margin-top: 10px;
+    justify-content: center;
+  }
+  .akod {
+    transform: translateX(-25%);
+    margin-top: 220px;
+    width: 350px;
+  }
+  #text {
+    text-align: center;
+    width: 370px;
+    margin-right: 25px;
+    transform: translateY(70px);
+  }
+  .milieu {
+    font-size: 10px;
+    justify-content: center;
+  }
+  .fichier6 {
+    width: 80px;
+    transform: translateY(12px);
+  }
+  .amg {
+    margin-top: 20px;
+  }
+  .helium {
+    width: 100px;
+    margin-left: 6px;
+  }
+  .proj {
+    margin-left: 170px;
+    font-size: 15px;
+  }
+  .sty {
+    margin-top: -37px;
+    font-size: 16px;
+    margin-left: 145px;
+  }
+  .bar {
+    margin-top: 20px;
+    transform: translateX(-27px);
+  }
+  .projets1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .txt {
+    margin-left: 10px;
+    text-align: center;
+  }
+  #tel {
+    display: none;
+    margin-top: 20px;
+    width: 5px;
+    transform: translateX(0px);
+  }
+  .formulaire {
+    align-self: center;
+    transform: translateX(50px);
+  }
+  .lkj {
+    transform: translateX(-20px);
+    font-size: 20px;
+  }
+  #plan {
+    width: 200px;
+    margin-left: 0px;
+    transform: translateY(90px);
+    place-self: center;
+    display: none;
+  }
+  .footer {
+    transform: translateX(50%);
+  }
+  .fa-solid.fa-caret-down {
+    display: inline-block;
+  }
 }/*# sourceMappingURL=sass.css.map */
