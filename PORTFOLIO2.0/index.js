@@ -24,14 +24,7 @@ window.addEventListener('scroll', () => {
     logo2.style.opacity = '0';
   }
 });
- const helium = document.getElementById('helium');
- window.addEventListener(scroll, () => {
-if(window.scrollY =150){
-  helium.style.transform = 'traslateX (300px)';
-}
-
- })
-
+ 
 const ratio = 0.3;
  //animation avec api intersection observer
 
@@ -54,7 +47,9 @@ const handleIntersect =function( entries , observer){
 }
 
  var observer = new IntersectionObserver(handleIntersect, option);
- observer.observe(document.querySelector('.projets1'))
+ document.querySelectorAll('.projets1').forEach ( function (r) {
+  observer.observe(r);
+ })
 
 
  const texte = " Je m'appelle  Léger Akodjenou Je suis étudiant et profondément passionné par le développement web J’aime concevoir et réaliser des sites web modernes, performants et fonctionnels Le web me permet d’exprimer ma créativité tout en apportant des solutions concrètes à des besoins réels À travers mes différents projets, je renforce continuellement mes compétences techniques et professionnelles..";
