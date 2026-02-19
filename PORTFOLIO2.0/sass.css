@@ -3,16 +3,19 @@ body {
   color: #f9ae00;
 }
 body .fa-solid.fa-caret-down {
-  display: none;
+  display: block;
+}
+body button {
+  color: red;
 }
 body nav {
-  top: -50px;
   height: 45px;
   position: fixed;
   border: 2px solid orange;
-  transform: 0.5s;
-  z-index: 1;
+  transition: 0.5s;
+  z-index: 1000;
   width: 100%;
+  background: black;
 }
 body nav:hover {
   background-color: #f9ae00;
@@ -119,6 +122,15 @@ footer {
   font-size: 1.5em;
 }
 
+.buton {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 #plan {
   margin-left: 40%;
   width: 900px;
@@ -132,13 +144,16 @@ footer {
   place-self: end;
   text-align: center;
   gap: space-between;
-  background-color: rgba(151, 148, 148, 0.516);
+  background-color: red;
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   body {
     width: 430px;
     overflow-x: hidden;
+  }
+  body .buton {
+    display: block;
   }
   nav {
     display: none;
@@ -247,9 +262,6 @@ footer {
     display: none;
   }
   .footer {
-    transform: translateX(50%);
-  }
-  .fa-solid.fa-caret-down {
-    display: inline-block;
+    transform: translateX(0%);
   }
 }/*# sourceMappingURL=sass.css.map */
