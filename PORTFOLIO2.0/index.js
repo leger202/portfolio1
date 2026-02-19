@@ -67,3 +67,11 @@ function afficherTexte() {
 }
 
 afficherTexte();
+const menu= document.querySelector('.buton');
+const menui= document.querySelector('.fa-solid.fa-caret-down');
+const nav1= document.querySelector('.nav');
+menu.onclick = function() {
+  nav1.classList.toggle("nav");
+  const isOpen= nav1.classList.contains('open');
+  menui.classList= isOpen ? 'fa-solid fa-caret-up' : 'fa-solid fa-caret-down';
+}
